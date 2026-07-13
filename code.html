@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-TW"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>滺璽國際 U-Cis International - 專業醫療照護與環境管理</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#c9c6c2",
+                    "on-surface-variant": "#4d453e",
+                    "tertiary": "#605e5b",
+                    "primary-fixed-dim": "#d8c3ad",
+                    "secondary-fixed-dim": "#d1c4bd",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1d1b1a",
+                    "on-secondary-container": "#6c625d",
+                    "inverse-surface": "#32302e",
+                    "on-tertiary-fixed-variant": "#484744",
+                    "on-secondary-fixed-variant": "#4e4540",
+                    "background": "#fef8f5",
+                    "surface-bright": "#fef8f5",
+                    "surface-variant": "#e7e1de",
+                    "on-primary-fixed-variant": "#534434",
+                    "secondary-container": "#eee0d8",
+                    "on-secondary-fixed": "#211a16",
+                    "surface-container": "#f3edea",
+                    "secondary": "#665c57",
+                    "on-primary-fixed": "#241a0c",
+                    "inverse-on-surface": "#f6efec",
+                    "surface-container-high": "#ede7e4",
+                    "on-tertiary-fixed": "#1c1c19",
+                    "primary-container": "#dcc7b1",
+                    "primary": "#6b5c4a",
+                    "secondary-fixed": "#eee0d8",
+                    "surface-dim": "#ded9d6",
+                    "surface": "#fef8f5",
+                    "surface-container-highest": "#e7e1de",
+                    "outline": "#7f756d",
+                    "on-tertiary-container": "#565552",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#6b5c4a",
+                    "outline-variant": "#d0c5ba",
+                    "surface-container-low": "#f8f2ef",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#e6e2de",
+                    "primary-fixed": "#f5dfc8",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#d8c3ad",
+                    "tertiary-container": "#cdcac6",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-container": "#625241",
+                    "on-surface": "#1d1b1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "16px",
+                    "xl": "24px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "container-padding": "24px",
+                    "section-gap-lg": "120px",
+                    "section-gap-sm": "64px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "label-md": ["Work Sans"],
+                    "headline-md": ["Noto Sans TC"],
+                    "body-md": ["Noto Sans TC"],
+                    "body-lg": ["Noto Sans TC"],
+                    "headline-lg": ["Noto Sans TC"],
+                    "headline-lg-mobile": ["Noto Sans TC"],
+                    "display-lg": ["Noto Sans TC"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .premium-shadow {
+            box-shadow: 0 10px 30px rgba(62, 54, 49, 0.05);
+        }
+        .hero-gradient {
+            background: linear-gradient(90deg, rgba(254, 248, 245, 0.95) 30%, rgba(254, 248, 245, 0) 100%);
+        }
+        .milky-blur {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="docked full-width top-0 sticky z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-gutter py-4 w-full max-w-7xl mx-auto z-50">
+<div class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-4xl">medical_services</span>
+<span>滺璽國際</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary font-bold pb-1 font-label-md text-label-md" href="#">關於我們</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-label-md text-label-md" href="#">最新消息</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-label-md text-label-md" href="#">服務項目</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-label-md text-label-md" href="#">案場實績</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-label-md text-label-md" href="#">人才招募</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-label-md text-label-md" href="#">QA問題</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-md text-label-md hover:opacity-80 transition-all duration-300 scale-95 active:scale-90">
+                聯絡我們
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 hero-gradient z-10"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="A warm, emotionally resonant photograph of a kind female caregiver in professional beige scrubs gently holding the hands of an elderly gentleman in a bright, sunlit modern room. The lighting is soft and golden, characteristic of a premium milk tea aesthetic. The background is a clean, high-end medical facility with minimalist decor and soft-toned furniture, evoking deep trust and professional care." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAJDj9yy_gfrQFZC3g9FvWrvdUVo6uSllU7c2Fu7hSXTScuBEyEbrkUEOgUAsdXOaPVX6fFcew8SxvLdklXXHEnljnZFSYdzSHbX-J-MWFQFxa5OWCqaxgf4PAWYaUokCHxMB2zoi1mu082rAmWSgnUkSfyZGCu6mpDcnUz6aHE6JdizywTgWrjE8yuqhodeSfdPrTGAx0Rh6Q0iFzaiAU1HknwOdgRRoLLHZ2lNDGwLQ6v0Bofz5j1xujgOA_yiSGhEnQWEn-uoQ')"></div>
+</div>
+<div class="container mx-auto px-gutter relative z-20">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md mb-6">
+                    Established Since 2013
+                </span>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-6 leading-tight">
+                    安心照護 · 專業管理<br/>
+<span class="text-primary">傳遞溫度的醫療照護</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                    致力於提供最人性化的照護與清潔管理，將專業技術與溫暖關懷結合，為醫療環境打造純淨且放心的空間。
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-label-md text-label-md hover:opacity-90 transition-all flex items-center gap-2 premium-shadow">
+                        了解更多 <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+<button class="border border-primary text-primary px-8 py-4 rounded-full font-label-md text-label-md hover:bg-primary/5 transition-all">
+                        服務項目
+                    </button>
+</div>
+</div>
+</div>
+<!-- Float Info Grid -->
+<div class="absolute bottom-12 right-gutter hidden xl:grid grid-cols-2 gap-4 z-20">
+<div class="bg-white/80 milky-blur p-6 rounded-xl premium-shadow w-48 border border-white/50">
+<div class="text-primary font-bold text-3xl mb-1">10+</div>
+<div class="text-on-surface-variant text-sm">十載深耕經驗</div>
+</div>
+<div class="bg-white/80 milky-blur p-6 rounded-xl premium-shadow w-48 border border-white/50">
+<div class="text-primary font-bold text-3xl mb-1">100%</div>
+<div class="text-on-surface-variant text-sm">專業認證人員</div>
+</div>
+</div>
+</section>
+<!-- Core Values Section (About Us) -->
+<section class="py-section-gap-lg bg-surface">
+<div class="container mx-auto px-gutter">
+<div class="flex flex-col md:flex-row gap-16 items-center mb-section-gap-sm">
+<div class="w-full md:w-1/2">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">卓越的綜合管理專家</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        滺璽國際成立於 2013 年，為專精於建築物環境清潔維護、醫院警衛勤務、傳送作業及病患照護之專業綜合管理服務商。我們深信，優質的管理不僅是技術的展現，更是對生命的尊重。
+                    </p>
+</div>
+<div class="w-full md:w-1/2 grid grid-cols-2 gap-6">
+<div class="bg-surface-container p-8 rounded-xl flex flex-col items-center text-center group hover:bg-primary-container transition-colors duration-500">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">handshake</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">安心</h3>
+<p class="text-sm text-on-surface-variant opacity-80">每一份服務皆承諾給予客戶最大的心理慰藉。</p>
+</div>
+<div class="bg-surface-container p-8 rounded-xl flex flex-col items-center text-center group hover:bg-primary-container transition-colors duration-500">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">medical_information</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">專業</h3>
+<p class="text-sm text-on-surface-variant opacity-80">嚴謹的標準化流程，確保服務準確無誤。</p>
+</div>
+<div class="bg-surface-container p-8 rounded-xl flex flex-col items-center text-center group hover:bg-primary-container transition-colors duration-500">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">品質</h3>
+<p class="text-sm text-on-surface-variant opacity-80">持續追求卓越，建立業界服務標竿。</p>
+</div>
+<div class="bg-surface-container p-8 rounded-xl flex flex-col items-center text-center group hover:bg-primary-container transition-colors duration-500">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">favorite</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">陪伴</h3>
+<p class="text-sm text-on-surface-variant opacity-80">溫柔守護每一刻，讓服務充滿人情味。</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-section-gap-lg bg-surface-container-low">
+<div class="container mx-auto px-gutter">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">全方位專業服務</h2>
+<div class="w-20 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Service 1 -->
+<div class="md:col-span-2 relative overflow-hidden rounded-xl h-[400px] group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A professional hospital cleaning staff in a clean uniform and mask using high-grade sanitation equipment to sanitize a bright, modern hospital corridor. The lighting is crisp and sterile yet warm, with a premium soft-beige medical aesthetic throughout the facility." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3hqZcGh5_ipXGGVy-D-Hqf_cBomY-8Oa1qP-tEc5i0p-DO0l4C0xH0p0UZoCwLrmDloSjReB0v_CoHm-j_q8n9lgfAPOSiQ0wbHXmM8RtkKSm9HAI1iG6qeShbQW1cwogY5WxlKZFG2_1zkcOceyZAbOq5IM8aTY-i0Yy1_LnWCG62ze617dNg6e62fDj_0pR5ieMi-Wze5ohoGZu8IZscJkr0JrzpE8fPQeHFoSNbFsmc_Nv93BAw9K7rnUYbnyZWB_PgJXPrg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent"></div>
+<div class="absolute bottom-0 p-8 text-white">
+<h3 class="font-headline-md text-headline-md mb-2">醫院駐點清潔員</h3>
+<p class="font-body-md opacity-90 mb-4">專業消毒與環境維護，打造安心醫療空間。</p>
+<span class="material-symbols-outlined">cleaning_services</span>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="relative overflow-hidden rounded-xl h-[400px] group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A focused caregiver in a neat uniform assisting an elderly patient with a smile in a brightly lit, high-end rehabilitation center. The room is decorated in soft milk-tea tones, creating a nurturing and prestigious atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAYOta4673ItoE1AC6xahx2qMK_vTaqf0NnF_5RpFrQgEqLc_TRlC7-Nv_7kfrah5bm4aUXVCjR5KZo8GwTHrhWD0MlD8BhbXm3FBPAdSmdbhtvRgcrYl7KYEO7A_XIuVMA4Pdbct-Tw7BDmN3HlMBiCem0FXwlhOapLOoqThrYJ5KIYTthdTFHnS2HHV0maWuXqlXoELKfhNvfPGD0GOknmKVzZWS58JgPGhz_5KwwohI4U4eE3XyGtP4ehjjxlYsH4VWEfGDTxw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent"></div>
+<div class="absolute bottom-0 p-8 text-white">
+<h3 class="font-headline-md text-headline-md mb-2">照顧服務員</h3>
+<p class="font-body-md opacity-90">有溫度的日常陪伴。</p>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="relative overflow-hidden rounded-xl h-[400px] group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A team of professional staff in corporate uniforms standing in a modern office lobby with high-end architectural details. The aesthetic is clean and minimal, emphasizing professionalism and dependability in manpower dispatch services." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCcI_ZrRCuwqpAjYrEz7KbUK_JU2VhVc3quiCjDW94Mm66GUWyJ0rTvYa3vEDpw7AcEelgobobhq9CSQ9m4NK_4tzBM7Mn06AjgF7xcQAU3rx4N2xzvc7BovY7HcRKvo_yzjlX5Z68zd2I4JkrqOFeeWUo4EnoW_I1Qb0AwcNK3_sea5IxuDJtYf3Q4ELIRAJySc4ruA21kbYcPotjThVir8RBZz1Tf43s82Rb_DhPvGFzcUDds17ya8VVUIs_2W0v_CiMEkgZdQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent"></div>
+<div class="absolute bottom-0 p-8 text-white">
+<h3 class="font-headline-md text-headline-md mb-2">人力派遣</h3>
+<p class="font-body-md opacity-90">靈活專業的人力解決方案。</p>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="md:col-span-4 relative overflow-hidden rounded-xl h-[300px] group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A panoramic view of a luxurious residential building lobby being meticulously cleaned by professional staff. The space is filled with warm light-mode aesthetics, featuring marble floors and cream-colored walls, reflecting high-quality building maintenance services." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-XeS0g2FouoXTMWVUfi6yFbs2dYA3CqViuS1XrabxiC2oeGWWAzkC91mW8oZPgp_m-8eFzMy65DcZWhyq5EdyB5QEoxC2zcXHf909CERxiYu_wr-PaL1N4pK-2S_Nza4VS8-IIJCcbOyirLligHzbjgRgQWj4LFs5zV0QFXdxFQFUvA5U9r9seUhOKbFgQd2YqlR1pTB70t3tfuHsi_2LNH_9WBpSh54XveXAq3MTKMMPulUBPRFWiO7Pa6dn3_X2Y4xNKFW8dQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-on-background/80 via-on-background/40 to-transparent"></div>
+<div class="absolute inset-0 flex items-center p-12 text-white">
+<div class="max-w-md">
+<h3 class="font-headline-lg text-headline-lg mb-2">建築物清潔服務</h3>
+<p class="font-body-md opacity-90">全面細緻的環境維護，提升建築價值。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Latest News -->
+<section class="py-section-gap-lg bg-surface">
+<div class="container mx-auto px-gutter">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">最新消息</h2>
+<p class="text-on-surface-variant mt-2">追蹤滺璽動態與行業趨勢</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 hover:translate-x-1 transition-transform" href="#">
+                    查看全部 <span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- News Item 1 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-xl mb-6 premium-shadow">
+<div class="h-56 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A professional business meeting occurring in a high-end, sunlit boardroom where partners are shaking hands. The color palette is composed of soft beiges and deep mochas, representing a successful new partnership announcement in a premium setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBo_kX3D2LzHlmypTM_WTIhTuAZ1BtaVbhwPZFxFka3e2hJNcWxJVOpzyQmIeuP_mL6bEo_iK27dSrJJ1gJ2twifEFgpqNH5T6YIre2Lv1zx_HSeEm-6hHxVsqQfGSYcTbCRY1sCmsgkQUYCRU9eO5bYcvz2F1tP68HC9YRULnYWPqjoaAbGaVqf-NqKh38gEO1ycVIzBRfAADaUYXtTib1NPiYfKYtZEjP0ydBoe0zOmJfBV34gJQ6hkjrjxIaZ02m5IaEXUB-rw')"></div>
+</div>
+<div class="flex items-center gap-3 mb-3">
+<span class="bg-primary-container text-on-primary-container text-[12px] px-2 py-0.5 rounded font-bold">公告</span>
+<span class="text-sm text-outline">2024.05.20</span>
+</div>
+<h3 class="font-headline-md text-on-surface group-hover:text-primary transition-colors mb-2">新案場合作公告：區域型教學醫院正式啟動</h3>
+<p class="text-on-surface-variant line-clamp-2">滺璽國際很榮幸宣布於本月起進駐中部地區知名教學醫院，提供全方位環境清潔與勤務支援服務...</p>
+</div>
+<!-- News Item 2 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-xl mb-6 premium-shadow">
+<div class="h-56 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A diverse group of professional staff participating in a career fair. They are dressed in smart-casual business attire within a bright, modern venue with a warm milk-tea color scheme, highlighting professional recruitment and career opportunities." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNu2tbcnQydnP0-b553EKR1-x085gzE_-LnNXYYD8gNAwlGUAkvGqgAEsaSTof9WWD5pnKtuSXkO5YiTOtaVQxNo8Zn5-_-YtaTPaX42V5d2kiWfRqVaPh2rOsoxEV4yHIuW7KgSsghU3LkZyHtJLsP4Q_4xjXCobSxyWvisQ8weIPqcMUbzsA9JjPw62QwDnf_ZxERR_6cbqrY1KyGXUvn3xJJeMutupCsEw9JWg-VGa__NCUrbvnVq3i3nr2nMCubbu_MVRdLg')"></div>
+</div>
+<div class="flex items-center gap-3 mb-3">
+<span class="bg-secondary-container text-on-secondary-container text-[12px] px-2 py-0.5 rounded font-bold">招募</span>
+<span class="text-sm text-outline">2024.05.15</span>
+</div>
+<h3 class="font-headline-md text-on-surface group-hover:text-primary transition-colors mb-2">人才招募資訊：擴大徵才，期待您的加入</h3>
+<p class="text-on-surface-variant line-clamp-2">為應對業務擴展需求，我們現正招聘多名照服員、清潔員及管理幹部，提供完善福利體系...</p>
+</div>
+<!-- News Item 3 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-xl mb-6 premium-shadow">
+<div class="h-56 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A classroom setting where professional healthcare workers are engaged in an educational training session. The environment is clean and professional, with high-end instructional equipment and warm lighting consistent with a premium educational theme." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCIrjqDl9vFJ5r1q3A9raFNkQ3sEiBo3A4W-ywSp8RRBBoMLSR8C4ICQ2W-Cto6S91Zm70LsdGc_WleWJ5R_Z4z1mJ_0AG1KB9CCQqmZroT1B6jR2FKRlViJsX3fyaxySxZMU7pQ9J8BT-Cmi2fPojPAdFyp8DKmg-Ces0TGyRgDcDomF4pucaY1qRPDnEN-SwKBUYTc083M1ruOC-c-hQpbHVfF3UsEaAN6MTNN3XMeXk3kY-wlDNEFoIHChnAG1THBkvw6N1zXA')"></div>
+</div>
+<div class="flex items-center gap-3 mb-3">
+<span class="bg-tertiary-container text-on-tertiary-container text-[12px] px-2 py-0.5 rounded font-bold">培訓</span>
+<span class="text-sm text-outline">2024.05.10</span>
+</div>
+<h3 class="font-headline-md text-on-surface group-hover:text-primary transition-colors mb-2">年度教育訓練課程：精進專業照護核心職能</h3>
+<p class="text-on-surface-variant line-clamp-2">本週舉行之第一季內部培訓順利圓滿，本次專注於進階感控流程與高階客戶溝通技巧...</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Case Studies Grid -->
+<section class="py-section-gap-lg bg-surface-container-high">
+<div class="container mx-auto px-gutter">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-12 text-center">案場實績</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="relative group aspect-[4/5] rounded-xl overflow-hidden cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="A pristine and modern hospital operating room shown during a professional sanitation walkthrough. Every surface is reflective and clean, with the warm, clinical lighting highlighting the high standards of hospital environmental cleaning services." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDW1Vy1xKeZybpl2hhb9Lfn3fQhkfXhsFpkGDUlN7pMDbTFmGsDeqnJl2sLc4rtn7_Kg3W_fN2xtpOxPmiEfQgiDUzhH6CR7RpVdIpDSvo0c5WxpkV0LJdcHbTYswN7RF15e3-luE6wytqi--jTi8Kvj8A2BRhPrDASBG0kWdEpZnf5bxDeaXlSE4jdeWj-q990w2j1INxwP-0gz2eFSxjmQ9wUvcGFxdcv2Gf-Zp_YGWECCUo9LHC9E3dJjxCkE1ff0j21YU3a1w')"></div>
+<div class="absolute inset-0 bg-on-background/20 group-hover:bg-on-background/40 transition-colors"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<p class="text-xs font-bold uppercase tracking-widest opacity-80 mb-1">Medical</p>
+<h4 class="font-bold text-lg">醫療院所環境清潔</h4>
+</div>
+</div>
+<div class="relative group aspect-[4/5] rounded-xl overflow-hidden cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="A high-end private hospital ward where a caregiver is adjusting a comfortable patient bed. The room has large windows with soft curtains and premium wooden flooring, embodying high-quality hospital ward care services." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQvk43W3nbHz0mYYQpASXN94osoTeiv3DXwGCVwmaE5UfCCaIElfHp1BV8eytoNw_30yOTWWGs9VvGsbXGCnoADg_nMbAfZ5kGb_f_x7K1a8P4432g_r9hCidh21f2P0O_S61Q7jfmrSo6xW5pVcMw8c-QcLx_VhdoZ3XErUn290cwQgBOQkTstAkPjKUORVM4-ePgOXG8kYkxZJhmPKUPFdJvbVhLa-cSEziV99y70C25Nl-kbx3uVwNbAvD4-e6KdtuE1Jz5EA')"></div>
+<div class="absolute inset-0 bg-on-background/20 group-hover:bg-on-background/40 transition-colors"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<p class="text-xs font-bold uppercase tracking-widest opacity-80 mb-1">Care</p>
+<h4 class="font-bold text-lg">醫院病房照護服務</h4>
+</div>
+</div>
+<div class="relative group aspect-[4/5] rounded-xl overflow-hidden cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="The elegant exterior and manicured garden of a luxury residential community. The image showcases pristine cleanliness and architectural beauty, emphasizing professional community maintenance and cleaning services." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6lWzfKnbnAnyaGctUM0phd7nfbB0B-G0b8nq-X0dYbGgnvYdXapuOEsdvHwhApCsc1DVBixZjh7Fgev_7HQ9tPQ3XymZAPHaGKbQEdJ7tUB9nd8tJYkd4q2_YwpjFoJR3i10STsQ7OjhzloYk5ab7W_kM4UCOoRp0l12gn19BnsurERkUBtFvfK5N-vuU7RpAxiZ95yMwYEc3sCp-qTQJd-5v7IOl5DTGUeLWYm27M35M8B4lgf7JFwFyHiMxbTCrFvCLMUPb3Q')"></div>
+<div class="absolute inset-0 bg-on-background/20 group-hover:bg-on-background/40 transition-colors"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<p class="text-xs font-bold uppercase tracking-widest opacity-80 mb-1">Residential</p>
+<h4 class="font-bold text-lg">社區大樓清潔維護</h4>
+</div>
+</div>
+<div class="relative group aspect-[4/5] rounded-xl overflow-hidden cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="A modern corporate office workspace with professional security personnel at a front desk and dispatch staff in the background. The aesthetic is clean, professional, and sophisticated, reflecting enterprise-level manpower and security services." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCuLRYbOwV7uvUGiMmSMBWpwCu8aqG_Zc9h-Ns3nmmspkFtnSo3u7ZRUaBxgZNi5Ahddt3X3EQFdupd4FTnufKWzM3E1RM4COJUiPgVLcB_brHWaQUoKFuwpL-ILjjnNlTIaAuUPxaQBifkdJwbn7SxRSa0j7Cw-hdQdgDwscUi5kgFwXXnb3bkxgRxSjFi7I3oQAlICKx1mu-DU_qPY-LfSlWroIw879cnqt1OCcyMh_IMYxmXB5Y_1AYr01mhpTBo9nRWi8Z2eA')"></div>
+<div class="absolute inset-0 bg-on-background/20 group-hover:bg-on-background/40 transition-colors"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<p class="text-xs font-bold uppercase tracking-widest opacity-80 mb-1">Enterprise</p>
+<h4 class="font-bold text-lg">企業駐點派遣服務</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Accordion -->
+<section class="py-section-gap-lg bg-surface">
+<div class="container mx-auto px-gutter max-w-4xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface text-center mb-12">常見問題解答</h2>
+<div class="space-y-4">
+<!-- Question 1 -->
+<div class="border border-outline-variant rounded-xl overflow-hidden bg-surface-container-lowest">
+<button class="w-full px-8 py-6 flex justify-between items-center text-left hover:bg-primary-container/20 transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-md text-on-surface">請問是否有提供 24 小時的照護服務？</span>
+<span class="material-symbols-outlined transform transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-8 pb-6 text-on-surface-variant font-body-md">
+                        是的，我們提供全天候 24 小時的專業病患照護與醫院駐點服務，並可視個案需求彈性調整排班，確保照護不間斷。
+                    </div>
+</div>
+<!-- Question 2 -->
+<div class="border border-outline-variant rounded-xl overflow-hidden bg-surface-container-lowest">
+<button class="w-full px-8 py-6 flex justify-between items-center text-left hover:bg-primary-container/20 transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-md text-on-surface">針對大型企業或醫院的標案，如何聯繫合作？</span>
+<span class="material-symbols-outlined transform transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-8 pb-6 text-on-surface-variant font-body-md">
+                        您可以撥打我們的服務專線 04-223364078，或透過本站「聯絡我們」表單提交需求，我們將有專人負責大型標案與企業合作的初步評估與報價。
+                    </div>
+</div>
+<!-- Question 3 -->
+<div class="border border-outline-variant rounded-xl overflow-hidden bg-surface-container-lowest">
+<button class="w-full px-8 py-6 flex justify-between items-center text-left hover:bg-primary-container/20 transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-md text-on-surface">員工上崗前是否經過專業的教育訓練？</span>
+<span class="material-symbols-outlined transform transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-8 pb-6 text-on-surface-variant font-body-md">
+                        當然。滺璽國際的所有服務人員在上崗前均須完成嚴格的標準化作業培訓，包含感控流程、隱私守則及緊急應變處理，並定期進行在職教育。
+                    </div>
+</div>
+<!-- Question 4 -->
+<div class="border border-outline-variant rounded-xl overflow-hidden bg-surface-container-lowest">
+<button class="w-full px-8 py-6 flex justify-between items-center text-left hover:bg-primary-container/20 transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-md text-on-surface">如何申請加入滺璽國際的工作團隊？</span>
+<span class="material-symbols-outlined transform transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-8 pb-6 text-on-surface-variant font-body-md">
+                        歡迎透過 104 人力銀行、1111 人力銀行搜尋「滺璽國際」應徵，或加入我們的 LINE 官方帳號進行初步諮詢，我們會安排面試洽談。
+                    </div>
+</div>
+<!-- Question 5 -->
+<div class="border border-outline-variant rounded-xl overflow-hidden bg-surface-container-lowest">
+<button class="w-full px-8 py-6 flex justify-between items-center text-left hover:bg-primary-container/20 transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-md text-on-surface">長期服務是否有專屬的優惠方案？</span>
+<span class="material-symbols-outlined transform transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-8 pb-6 text-on-surface-variant font-body-md">
+                        針對長期合約的企業客戶或長時段照護需求，我們提供客製化的服務配套方案，具體內容將由業務代表依據實際需求進行規劃。
+                    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Recruitment Section -->
+<section class="py-section-gap-lg bg-primary-container/30">
+<div class="container mx-auto px-gutter">
+<div class="bg-white rounded-xl overflow-hidden flex flex-col md:flex-row premium-shadow">
+<div class="w-full md:w-5/12 bg-cover bg-center h-64 md:h-auto" data-alt="A warm and inviting headshot of a smiling professional caregiver in light beige scrubs, radiating kindness and competence. The background is softly blurred with warm interior lighting and cream tones, creating a welcoming recruitment message." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtbaDiAofuH1ld-HtIyyZjxAWoJFa7SmE9Gl4691zBrFMfiX1o-uzQk-2cNUPuvTbwwU2oYmCdopoPaTSsuV4opa8-1zMWGrJigYrSPN1YrhZA4p63-AlkTC5djotTFYsI2e5cA7NLMn1_grVGDmJNnEXF8snPT0qEjvPoSgw4p4RTyXWQ_lYWmJk5lD5Dk5E4x1fQomUsAWC57iQWgiC2jlblJKoXggP8yazc3cvZOPTcQBNDU2vWnKbw4AnVIcT6kqHDKIdNxA')"></div>
+<div class="p-12 md:w-7/12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">我們正在尋找專業的您</h2>
+<p class="font-body-lg text-on-surface-variant mb-8">
+                        誠徵：照顧服務員、醫院清潔員、傳送員、警衛勤務人員。<br/>
+                        在滺璽，我們視員工為最重要的資產，提供完善的職涯路徑與安心保障。
+                    </p>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-label-md">勞健保保障</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-label-md">團體保險</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-label-md">完整教育訓練</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-label-md">完善升遷制度</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-label-md">優渥獎金制度</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-4">
+<a class="flex items-center gap-2 bg-[#00B900] text-white px-6 py-3 rounded-full font-bold hover:opacity-90 transition-opacity" href="#">
+<span class="font-label-md">LINE 諮詢</span>
+</a>
+<a class="flex items-center gap-2 bg-[#FF6A00] text-white px-6 py-3 rounded-full font-bold hover:opacity-90 transition-opacity" href="#">
+<span class="font-label-md">104 人力銀行</span>
+</a>
+<a class="flex items-center gap-2 bg-[#0089BA] text-white px-6 py-3 rounded-full font-bold hover:opacity-90 transition-opacity" href="#">
+<span class="font-label-md">1111 人力銀行</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap-lg bg-surface">
+<div class="container mx-auto px-gutter">
+<div class="flex flex-col md:flex-row gap-16">
+<div class="w-full md:w-1/2">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8">與我們聯繫</h2>
+<div class="space-y-8">
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<h4 class="font-headline-md text-on-surface mb-1">辦公室地址</h4>
+<p class="text-on-surface-variant">台中市烏日區民權街49巷1號</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">phone_enabled</span>
+</div>
+<div>
+<h4 class="font-headline-md text-on-surface mb-1">服務專線</h4>
+<p class="text-on-surface-variant">04-223364078</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">chat_bubble</span>
+</div>
+<div>
+<h4 class="font-headline-md text-on-surface mb-1">官方 LINE</h4>
+<p class="text-on-surface-variant">ID: @ucis_tw (即時回覆需求)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<div class="rounded-xl overflow-hidden h-[400px] premium-shadow border border-white">
+<img class="w-full h-full object-cover" data-location="台中市烏日區民權街49巷1號" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjoVsIt0zS3d8v9XzG59DUwY9vwujdRK97pXQ0o_ZKab5Lhnwu4iZcMgHh-E9QIlynvc8RKTjqCG4cR8BPhFSrft41xzLhg9e4hyHPRVyzAq2FPh-BbK2hCIntNgduwRTiNGT2xlkaVPR7RDxIiyvAVG-oJZB4BAJfrpZb5zNAUIjdZrhj5ZeBnm1PMkggEbTjshOS1Y63dlweFB7m2ctDormOCNfjxxkIeOyKyTyfv49LHgH0Wn-jPHfEZOM9SfPtnfWL7vElaA"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary">
+<div class="flex flex-col md:flex-row justify-between items-start px-gutter py-section-gap-sm w-full max-w-7xl mx-auto">
+<div class="mb-10 md:mb-0">
+<div class="font-headline-md text-headline-md font-bold text-on-secondary-container dark:text-on-secondary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl">medical_services</span>
+<span>滺璽國際</span>
+</div>
+<p class="max-w-sm opacity-80 font-body-md">
+                    以專業管理創造優質環境，用溫暖照護守護生命價值。自2013年起，深耕中部，邁向全台。
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div>
+<h5 class="font-bold mb-4 font-label-md">快速連結</h5>
+<ul class="space-y-2 opacity-80 font-label-md">
+<li><a class="hover:text-primary transition-colors" href="#">關於我們</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">最新消息</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">服務項目</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-4 font-label-md">專業服務</h5>
+<ul class="space-y-2 opacity-80 font-label-md">
+<li><a class="hover:text-primary transition-colors" href="#">照護服務</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">環境清潔</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">人力派遣</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-1">
+<h5 class="font-bold mb-4 font-label-md">關注我們</h5>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg">face_nod</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg">share</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-on-secondary-container/10">
+<div class="max-w-7xl mx-auto px-gutter py-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-60">
+<p>© 2024 滺璽國際 U-Cis International. All Rights Reserved.</p>
+<div class="flex gap-8">
+<a href="#">隱私權政策</a>
+<a href="#">使用條款</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        function toggleFaq(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('.material-symbols-outlined');
+            
+            // Toggle Content
+            content.classList.toggle('hidden');
+            
+            // Toggle Icon Rotation
+            if (content.classList.contains('hidden')) {
+                icon.style.transform = 'rotate(0deg)';
+                btn.classList.remove('bg-primary-container/20');
+            } else {
+                icon.style.transform = 'rotate(180deg)';
+                btn.classList.add('bg-primary-container/20');
+            }
+        }
+
+        // Simple scroll animation for navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('premium-shadow');
+            } else {
+                nav.classList.remove('premium-shadow');
+            }
+        });
+    </script>
+</body></html>
